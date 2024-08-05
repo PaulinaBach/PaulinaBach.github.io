@@ -1,0 +1,299 @@
+/* Establece los márgenes y rellenos a cero para todos los elementos, y establece el modelo de caja para que el tamaño del elemento incluya el relleno y el borde */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente general del documento */
+    line-height: 1.6;
+    /* Altura de línea para mejorar la legibilidad */
+    background-color: #f4f4f4;
+    /* Color de fondo para el cuerpo */
+}
+
+/* Estilos para la sección de encabezado */
+header {
+    background: #333;
+    /* Color de fondo del encabezado */
+    color: #fff;
+    /* Color del texto del encabezado */
+    padding: 1rem 0;
+    /* Espacio interno en el encabezado */
+    text-align: center;
+    /* Alineación del texto en el centro */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none;
+    /* Elimina los puntos de lista predeterminados */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    display: inline;
+    /* Muestra los elementos en línea */
+    margin: 0 1rem;
+    /* Espacio a los lados de cada elemento de la lista */
+}
+
+/* Estilos para los enlaces dentro de la lista de navegación */
+nav ul li a {
+    color: #fff;
+    /* Color del texto del enlace */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    font-weight: bold;
+    /* Hace el texto del enlace en negrita */
+}
+
+/* Estilos para la sección destacada */
+.hero {
+    padding: 2rem 0;
+    /* Espacio interno en la sección destacada */
+}
+
+/* Estilos para el contenedor de contenido dentro de la sección destacada */
+.hero-content {
+    display: flex;
+    /* Usa flexbox para el diseño */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+/* Estilos para la imagen de perfil en la sección destacada */
+.hero .profile-image {
+    border-radius: 50%;
+    /* Redondea la imagen para que tenga forma circular */
+    width: 150px;
+    /* Ajusta el tamaño de la imagen */
+    height: 150px;
+    /* Ajusta el tamaño de la imagen */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen y recorta si es necesario */
+    margin-bottom: 1rem;
+    /* Espacio debajo de la imagen */
+    margin-right: 2rem;
+    /* Espacio entre el texto y la imagen */
+}
+
+/* Estilos para el encabezado dentro de la sección destacada */
+.hero h1 {
+    font-size: 2.5rem;
+    /* Tamaño de la fuente para el encabezado */
+    margin-bottom: 0.5rem;
+    /* Espacio debajo del encabezado */
+}
+
+/* Estilos para el texto dentro de la sección destacada */
+.hero-text {
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para los párrafos dentro de la sección destacada */
+.hero p {
+    font-size: 1.2rem;
+    /* Tamaño de la fuente para los párrafos */
+}
+
+/* Estilos para las secciones generales */
+section {
+    padding: 2rem;
+    /* Espacio interno en las secciones */
+    margin: 0 auto;
+    /* Centra las secciones horizontalmente */
+    max-width: 800px;
+    /* Ancho máximo de las secciones */
+    background: #fff;
+    /* Color de fondo blanco para las secciones */
+    border-radius: 8px;
+    /* Bordes redondeados para las secciones */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil alrededor de las secciones */
+    margin-bottom: 1rem;
+    /* Espacio debajo de cada sección */
+}
+
+/* Estilos para los encabezados dentro de las secciones */
+section h2 {
+    margin-bottom: 1rem;
+    /* Espacio debajo del encabezado */
+}
+
+/* Estilos para el contenedor de habilidades técnicas */
+.skills {
+    display: flex;
+    /* Organiza las imágenes en una fila */
+    gap: 1rem;
+    /* Espacio entre las imágenes */
+    margin-top: 1rem;
+    /* Espacio superior */
+}
+
+/* Estilos para las imágenes de habilidades técnicas */
+.skill-image {
+    width: 50px;
+    /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+    border-radius: 8px;
+    /* Bordes redondeados para las imágenes */
+    object-fit: contain;
+    /* Asegura que las imágenes se muestren adecuadamente */
+}
+
+/* Estilos para los formularios */
+form {
+    display: flex;
+    /* Usa flexbox para el diseño del formulario */
+    flex-direction: column;
+    /* Organiza los elementos del formulario en una columna */
+}
+
+/* Estilos para las etiquetas de los formularios */
+form label {
+    margin-bottom: 0.5rem;
+    /* Espacio debajo de cada etiqueta */
+}
+
+/* Estilos para los campos de entrada y áreas de texto en los formularios */
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    /* Espacio debajo de cada campo */
+    padding: 0.5rem;
+    /* Espacio interno en los campos */
+    border: 1px solid #ddd;
+    /* Borde delgado y gris para los campos */
+    border-radius: 4px;
+    /* Bordes redondeados para los campos */
+}
+
+/* Estilos para el botón de envío en los formularios */
+form button {
+    background: #333;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    padding: 0.75rem;
+    /* Espacio interno en el botón */
+    border: none;
+    /* Sin borde alrededor del botón */
+    border-radius: 4px;
+    /* Bordes redondeados para el botón */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    font-size: 1rem;
+    /* Tamaño de la fuente del botón */
+    margin-right: 2rem;
+    /* Espacio a la derecha del botón */
+}
+
+/* Estilos para el botón de envío cuando se pasa el ratón sobre él */
+form button:hover {
+    background: #555;
+    /* Cambia el color de fondo del botón al pasar el ratón */
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    /* Color de fondo del botón (verde de WhatsApp) */
+    color: #fff;
+    /* Color del texto del botón */
+    padding: 0.75rem 1.5rem;
+    /* Espaciado interior del botón */
+    border: none;
+    border-radius: 4px;
+    /* Bordes redondeados del botón */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    font-size: 1rem;
+    /* Tamaño de fuente del texto del botón */
+    margin-right: 2rem;
+    /* Espacio a la derecha del botón */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    display: inline-block;
+    /* Muestra el botón en línea con otros elementos */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-top: 1rem;
+    /* Espacio superior entre el formulario y el botón */
+    transition: all 0.3s;
+    /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el botón cuando se pasa el ratón por encima */
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    /* Color de fondo más oscuro cuando se pasa el ratón */
+}
+
+/* Estilos para el boton de LinkedIn*/
+.linkedin-button {
+    color: #f1f4f6;
+    /* Color del texto del boton*/
+    background-color: #0078b7;
+    /* Color de fondo del botón */
+    padding: 0.75rem 1.5rem;
+    /* Espaciado interior del botón */
+    border: none;
+    border-radius: 4px;
+    /* Bordes redondeados del botón */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    font-size: 1rem;
+    /* Tamaño de fuente del texto del botón */
+    margin-right: 2rem;
+    /* Espacio a la derecha del botón */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    display: inline-block;
+    /* Muestra el botón en línea con otros elementos */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-top: 1rem;
+    /* Espacio superior entre el formulario y el botón */
+    transition: all 0.3s;
+    /* Transición suave para el cambio de color */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+/* Estilos para el boton de LinkedIn cuando se pasa el ratón sobre él */
+.linkedin-button:hover {
+    background-color: #3a04ae;
+    /* Color de fondo más oscuro cuando se pasa el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333;
+    /* Color de fondo del pie de página */
+    color: #fff;
+    /* Color del texto del pie de página */
+    text-align: center;
+    /* Alineación del texto en el centro */
+    padding: 1rem 0;
+    /* Espacio interno en el pie de página */
+    width: 100%;
+    /* Asegura que el pie de página ocupe todo el ancho disponible */
+    bottom: 0;
+    /* Posiciona el pie de página en la parte inferior */
+    position: relative;
+    /* Permite que el pie de página se ubique en relación con otros elementos */
+}
